@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="farm.css">
+  <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
+  <title>MAPEJOY || Invest</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="mpj logo.png" alt="header__logo">
+    </div>
+    <div class="header__items">
+      <ul>
+        <li><a href="Home.html" class="header__links">Home</a></li>
+        <li><a href="about.html" class="header__links">About Us</a></li>
+        <li><a href="Invest.html" class="header__links">Invest</a></li>
+        <li><a href="" class="header__links">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="wrapper-menu">
+      <div class="wrapper-menu__line half start"></div>
+      <div class="wrapper-menu__line"></div>
+      <div class="wrapper-menu__line half end"></div>
+    </div>
+  </header>
+
+  <div class="investment">
+    <div class="investment__wrapper">
+      <img src="Image/invest.jpg" alt="">
+      <div class="investment__increment">
+        <i class="fa fa-minus" onclick="decrement()"  aria-hidden="true"><strong>-</strong></i>
+        <input type="text" id="number" value="1" disabled/>
+        <i class="fa fa-plus" onclick="increment()" aria-hidden="true"><strong>+</strong></i>
+      </div>
+
+      <p class="investment__amounts">Total investment money:<span id="amounts"> 20000</span> </p>
+      
+      <p class="investment__returns">Total Investment with ROI: <span id="returns"> 24000</span></p>
+    </div>
+  </div>
+
+
+<div class="form-v4">
+  <div class="page-content">
+		<div class="form-v4-content">
+			<div class="form-left">
+        <h2>INFORMATION</h2>
+        
+				<p class="text-1">
+          Carefully fill in the form with the following instructions.
+        </p>
+				<p class="text-2">
+          <span>1. Fill all inputs filled in Block format.</span> <br>
+          <span>2. Applicants outside nigeria should kindly include their country code.</span> <br>
+          <span>3. Your email must be a functional and active mail.</span> <br>
+          <span>4. We ask for your bank details for easy desemination of funds after the ROI date.</span> <br>
+          <span>5. Your Private information is safe with us.</span>
+        </p>		
+			</div>
+			<form class='form-detail' id='myform' method='POST'><input type='hidden' name='form-name' value='myform' />
+        <h2>REGISTER FORM</h2>
+        
+
+				<div class="form-group">
+					<div class="form-row form-row-1">
+						<label for="first_name">First Name</label>
+						<input type="text" name="first_name" id="first_name" class="input-text">
+					</div>
+					<div class="form-row form-row-1">
+						<label for="last_name">Last Name</label>
+						<input type="text" name="last_name" id="last_name" class="input-text">
+					</div>
+        </div>
+        
+
+				<div class="form-row">
+					<label for="your_email">Your Email</label>
+					<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+        </div>
+        
+
+				<div class="form-group">
+					<div class="form-row form-row-1 ">
+						<label for="phone__number">Phone Number</label>
+						<input type="number" name="phone__number" id="telephone" class="input-text" required>
+          </div>
+          <div class="form-row form-row-1 ">
+						<label for="address">Address</label>
+						<input type="text" name="address" id="password" class="input-text" required>
+					</div>
+        </div>
+
+
+        <div class="form-group">
+					<div class="form-row form-row-1">
+						<label for="bank_name">Bank Name</label>
+						<input type="text" name="bank_name" id="first_name" class="input-text">
+					</div>
+					<div class="form-row form-row-1">
+						<label for="account_number">Account Number</label>
+						<input type="number" name="account_number" id="account_number" class="input-text">
+					</div>
+        </div>
+
+        <div class="form-row">
+						<label for="account_name">Account Name</label>
+						<input type="text" name="account_name" id="account_name" class="input-text">
+        </div>
+
+        <div class="form-row">
+						<label for="amount_to_invest">Amount to invest</label>
+						<input type="number" name="amount_to_invest" id="amount_to_invest" class="input-text">
+        </div>
+        
+
+				<div class="form-checkbox">
+					<label class="container"><p>I agree to the <a href="#" class="text">Terms and Conditions</a></p>
+					  	<input type="checkbox" name="checkbox">
+					  	<span class="checkmark"></span>
+					</label>
+        </div>
+        
+
+				<div class="form-row-last">
+					<input type="submit" name="Submit" class="submit" value="Submit">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+  <footer class="footer">
+    <div class="footer__logo">
+      <img src="mpj logo.png" alt="footer__logo">
+    </div>
+    <div class="footer__icons-container">
+      <hr>
+      <div class="footer__icons-wrapper">
+        <div class="footer__icons">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+        <div class="footer__icons">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div class="footer__icons">
+          <i class="fa fa-google" aria-hidden="true"></i>
+        </div>
+        <div class="footer__icons">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+      </div>
+      <hr>
+    </div>
+      
+    <p class="footer__copyright">
+Copyright © 2023 peace_ibukunoluwa. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/mpjfarm.js"></script>
+</body>
+</html>
